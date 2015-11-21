@@ -25,4 +25,4 @@ for row in parsedInput:
   resp = random.choice(RESP_VALUES)
   rem = random.triangular(REM_DUR_MIN, REM_DUR_MAX, REM_DUR_MODE)
   surv = random.triangular(SURVIVAL_MIN, SURVIVAL_MAX, SURVIVAL_MODE)
-  sys.stdout.write(row[0] + "\t" + resp + "\t" + str(format(rem, '.2f')) + "\t" + str(format(surv, '.2f')))
+  sys.stdout.write(row[0] + "\t" + resp + "\t" + str(format(rem, '.2f')) + "\t" + str(format(surv, '.2f')) + "\n")
