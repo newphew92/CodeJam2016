@@ -1,4 +1,5 @@
 import sys
+import re
 import random
 
 RESP_VALUES = ["COMPLETE_REMISSION", "RESISTANT"]
