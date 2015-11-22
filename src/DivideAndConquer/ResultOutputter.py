@@ -5,10 +5,10 @@ Q1FileName = "q1.txt"
 Q2FileName = "q2.txt"
 Q3FileName = "q3.txt"
 
-ColLines = [line.rstrip('\n') for line in open(ColLines)]
+ColLines = [line.rstrip('\n') for line in open(ColIDs)]
 Q1lines = [line.rstrip('\n') for line in open(Q1FileName)]
 Q2lines = [line.rstrip('\n') for line in open(Q2FileName)]
 Q3lines = [line.rstrip('\n') for line in open(Q3FileName)]
 
-for i in xrange(len(Q1Lines)):
-  print(ColLines + "\t" + Q1Lines[i] + "\t" + Q2Lines[i] + "\t" + Q3Lines[i])
+for i in xrange(len(Q1lines)):
+  print(ColLines[i] + "\t" + Q1lines[i] + "\t" + Q2lines[i] + "\t" + Q3lines[i])
