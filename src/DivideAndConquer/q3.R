@@ -19,9 +19,9 @@ params <- matrix(
 if (!interactive()) opt <- getopt(params);                                                                                                                                               
 
 ## if NOT run from terminal / command line, these 3 file paths must be provided.
-path.train.data <- 'trainingData-release.csv'#opt$train;
+path.train.data <- 'trainingData-release.csv'
 path.test.data  <- opt$test;
-path.output     <- 'test.csv' #if(is.null(opt$output)) '.' else opt$output;
+path.output     <- 'test.csv' 
 RANDOM_SEED     <- 987;
 set.seed(RANDOM_SEED);
 
