@@ -14,8 +14,20 @@ rawInput = f.read()
 rawInput = re.sub('\r', '', rawInput)
 formattedInput = re.sub('\t', ',', rawInput)
 
-# Output the file
+# Output the csv file
 my_filename = os.path.join(path_to_script, "formattedInput.csv")
 
+with open(my_filename, "w") as text_file:
+    text_file.write(formattedInput)
+
+# Grab the first column and output the IDs
+reformattedInput = re.split(r'\n', formattedInput)
+idString = ""
+for row in reformattedInput:
+    cols = re.split(r',', row)
+    idString = idString + cols[0] + "\n"
+
+
+my_filename = os.path.join(path_to_script, "cols.txt")
 with open(my_filename, "w") as text_file:
     text_file.write(formattedInput)
