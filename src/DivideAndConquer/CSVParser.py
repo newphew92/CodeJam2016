@@ -17,5 +17,5 @@ formattedInput = re.sub('\t', ',', rawInput)
 # Output the file
 my_filename = os.path.join(path_to_script, "formattedInput.csv")
 
-with open(my_filename, "w") as handle:
-    print(formattedInput, file=handle)
+with open("my_filename", "w") as text_file:
+    text_file.write(formattedInput)
