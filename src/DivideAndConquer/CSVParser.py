@@ -6,7 +6,7 @@ import os
 path_to_script = os.path.dirname(os.path.abspath(__file__))
 
 # Open the file
-fileName = sys.argv[0]
+fileName = sys.argv[1]
 f = open(fileName,"r")
 rawInput = f.read()
 
