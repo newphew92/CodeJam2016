@@ -6,7 +6,7 @@ import os
 path_to_script = os.path.dirname(os.path.abspath(__file__))
 
 # Open the file
-fileName = sys.arg[0]
+fileName = sys.argv[0]
 f = open(fileName,"r")
 rawInput = f.read()
 
@@ -17,5 +17,5 @@ formattedInput = re.sub('\t', ',', rawInput)
 # Output the file
 my_filename = os.path.join(path_to_script, "formattedInput.csv")
 
-with open("my_filename", "w") as text_file:
+with open(my_filename, "w") as text_file:
     text_file.write(formattedInput)
