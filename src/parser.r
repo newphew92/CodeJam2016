@@ -10,8 +10,6 @@ for(row in rawInput){
     x <- paste(x, row, sep="\n")
 }
 
-#tableCSVString <- paste(TABLE_HEADER_VOMIT, rawInput, sep="")
-
 con <- textConnection(x)
 data <- read.csv(con)
 close(con)
